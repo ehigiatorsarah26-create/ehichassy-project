@@ -1,20 +1,109 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Thank You - Ehichassy Nigeria Enterprise</title>
-    <style>
-        body { font-family: Arial, sans-serif; background-color: #f4f4f4; margin: 0; text-align: center; padding: 50px; }
-        h1 { color: #0A3D62; }
-        p { font-size: 18px; }
-        a { display: inline-block; margin-top: 20px; padding: 10px 20px; background: #8B0000; color: white; text-decoration: none; border-radius: 5px; }
-        a:hover { background: #0A3D62; }
-    </style>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Contract Agreement - Ehichassy Nigeria Enterprise</title>
+<style>
+:root {
+  --brand-blue: #0b3d91;
+  --brand-wine: #7a1f2e;
+  --radius: 14px;
+  --pad: 22px;
+  --muted:#6b6b6b;
+}
+* { box-sizing: border-box }
+html, body { margin:0; padding:0; font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, Arial; color:#10203b; background:#f3f6fb }
+a { color: var(--brand-blue); text-decoration: none }
+.topbar { background: linear-gradient(90deg, var(--brand-wine), var(--brand-blue)); color:#fff; padding: 16px 18px; }
+.navwrap { max-width: 1100px; margin: 0 auto; display:flex; align-items:center; gap:16px; justify-content:space-between }
+.brand { display:flex; align-items:center; gap:12px }
+.brand .logo { width:56px; height:56px }
+.brand h1 { font-size:1.15rem; margin:0 }
+nav a { color:#fff; opacity:0.95; margin-left:16px }
+nav a:hover { opacity:1 }
+.container { max-width: 1100px; margin: 26px auto; padding: 0 18px }
+.card { background:#fff; border-radius: var(--radius); overflow:hidden; box-shadow: 0 10px 28px rgba(10,30,60,.10) }
+.hero { background: var(--brand-blue); color:#fff; padding: 26px }
+.hero h2 { margin:0; font-size:1.25rem }
+.hero p { margin:8px 0 0; color: rgba(255,255,255,.9) }
+.content { padding: 22px }
+h3 { color: var(--brand-wine); margin-top:18px }
+.btn { display:inline-block; padding:10px 14px; border-radius:10px; font-weight:600 }
+.btn-primary { background: var(--brand-wine); color:#fff }
+.footer { text-align:center; color:var(--muted); padding: 18px 0 26px }
+.notice { background:#fff7e6; border:1px solid #ffd699; padding:10px 12px; border-radius:10px }
+form { display:grid; gap:14px; max-width:680px }
+input, textarea { padding:10px 12px; border-radius:10px; border:1px solid #dbe7fb; width:100% }
+label { font-weight:600; color:#0d2a5a }
+@media print {
+  body { background:#fff }
+  .topbar, .footer, .actions, nav { display:none }
+  .card { box-shadow:none; border-radius:0 }
+}
+</style>
 </head>
 <body>
-    <h1>Thank You!</h1>
-    <p>Your acceptance of the contract agreement has been successfully recorded.</p>
-    <a href="index.html">Back to Home</a>
+<header class="topbar">
+  <div class="navwrap">
+    <div class="brand">
+<svg class="logo" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+  <defs>
+    <linearGradient id="g" x1="0" x2="1">
+      <stop offset="0%" stop-color="#7a1f2e"/>
+      <stop offset="100%" stop-color="#0b3d91"/>
+    </linearGradient>
+  </defs>
+  <rect rx="18" width="100" height="100" fill="url(#g)"/>
+  <path d="M28 26h22a6 6 0 0 1 6 6v6a6 6 0 0 1-6 6H36v20" fill="none" stroke="#fff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+      <div>
+        <h1>Ehichassy Nigeria Enterprise</h1>
+        <div style="opacity:.9">Supply · Install · Distribute</div>
+      </div>
+    </div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="contract.html">Contract</a>
+      <a href="mailto:charlesehigiator5@gmail.com">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+  <div class="card">
+    <div class="hero">
+      <h2>Contract Agreement</h2>
+      <p>Supply & Installation of 500 KVA Transformer and Distribution to 300 Households</p>
+    </div>
+    <div class="content">
+      <h3>Agreement Details</h3>
+      <p>This agreement is made this ___ day of _______, 20__, between Ehichassy Nigeria Enterprise (the "Sponsor") and the respective house owners at Ofeiani Quarters, Ihumudumu, Ekpoma, Edo State.</p>
+      <p>Each house owner is expected to pay ₦1,076,250 being the actual cost to supply each house. The sponsor is subsidizing by 5%.</p>
+      <h3>Payment Schedule</h3>
+      <ul>
+        <li>80% upfront before commencement of supply & installation</li>
+        <li>20% upon completion and final testing</li>
+      </ul>
+
+      <h3>Fill in Your Details to Proceed</h3>
+      <form action="thank-you.html" method="get">
+        <label for="fullname">Full Name</label>
+        <input type="text" id="fullname" name="fullname" required>
+
+        <label for="address">House Address</label>
+        <input type="text" id="address" name="address" required>
+
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone" required>
+
+        <label for="signature">Signature</label>
+        <textarea id="signature" name="signature" rows="3" placeholder="Type your full name as signature" required></textarea>
+
+        <button class="btn btn-primary" type="submit">Submit Agreement</button>
+      </form>
+    </div>
+  </div>
+  <div class="footer">&copy; Ehichassy Nigeria Enterprise</div>
+</main>
 </body>
 </html>
