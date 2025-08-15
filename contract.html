@@ -1,316 +1,325 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Ehichassy Nigeria Enterprise</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Ehichassy Nigeria Enterprise — Contract Agreement</title>
+
 <style>
-:root {
-  --brand-blue: #0b3d91;
-  --brand-wine: #7a1f2e;
-  --radius: 14px;
-  --pad: 22px;
-  --muted:#6b6b6b;
-}
-* { box-sizing: border-box }
-html, body { margin:0; padding:0; font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, Arial; color:#10203b; background:#f3f6fb }
-a { color: var(--brand-blue); text-decoration: none }
-.topbar { background: linear-gradient(90deg, var(--brand-wine), var(--brand-blue)); color:#fff; padding: 16px 18px; }
-.navwrap { max-width: 1100px; margin: 0 auto; display:flex; align-items:center; gap:16px; justify-content:space-between }
-.brand { display:flex; align-items:center; gap:12px }
-.brand .logo { width:56px; height:56px }
-.brand h1 { font-size:1.15rem; margin:0 }
-nav a { color:#fff; opacity:0.95; margin-left:16px }
-nav a:hover { opacity:1 }
-.container { max-width: 1100px; margin: 26px auto; padding: 0 18px }
-.card { background:#fff; border-radius: var(--radius); overflow:hidden; box-shadow: 0 10px 28px rgba(10,30,60,.10) }
-.hero { background: var(--brand-blue); color:#fff; padding: 26px }
-.hero h2 { margin:0; font-size:1.25rem }
-.hero p { margin:8px 0 0; color: rgba(255,255,255,.9) }
-.content { padding: 22px }
-table { width:100%; border-collapse: collapse; margin-top:10px }
-th, td { border:1px solid #e5edf9; padding:10px; text-align:left }
-th { background:#f1f6ff; color: var(--brand-blue) }
-h3 { color: var(--brand-wine); margin-top:18px }
-.btn { display:inline-block; padding:10px 14px; border-radius:10px; font-weight:600 }
-.btn-primary { background: var(--brand-wine); color:#fff }
-.btn-outline { border:1px solid var(--brand-blue); color: var(--brand-blue); background:#fff }
-.footer { text-align:center; color:var(--muted); padding: 18px 0 26px }
-.grid { display:grid; grid-template-columns: repeat(auto-fit,minmax(260px,1fr)); gap:16px }
-.meta .box { background:#f7f9fc; border:1px solid #eef3fb; padding:12px; border-radius:10px }
-.form { display:grid; gap:12px; max-width:680px }
-input, textarea { padding:10px 12px; border-radius:10px; border:1px solid #dbe7fb; width:100% }
-label { font-weight:600; color:#0d2a5a }
-.notice { background:#fff7e6; border:1px solid #ffd699; padding:10px 12px; border-radius:10px }
-@media print {
-  body { background:#fff }
-  .topbar, .footer, .actions, nav { display:none }
-  .card { box-shadow:none; border-radius:0 }
-}
+  :root{
+    --brand-blue:#0b3d91;
+    --brand-wine:#7a1f2e;
+    --ink:#10203b;
+    --muted:#6b6b6b;
+    --bg:#f4f6f9;
+    --card:#ffffff;
+    --radius:14px;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0;color:var(--ink);font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto,Arial;background:var(--bg);line-height:1.55}
+  a{color:var(--brand-blue);text-decoration:none}
+  .topbar{background:linear-gradient(90deg,var(--brand-wine),var(--brand-blue));color:#fff;padding:14px 18px}
+  .navwrap{max-width:1100px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:16px}
+  .brand{display:flex;align-items:center;gap:12px}
+  .brand .logo{width:54px;height:54px}
+  .brand h1{margin:0;font-size:1.1rem}
+  nav a{color:#fff;opacity:.95;margin-left:14px}
+  nav a:hover{opacity:1}
+  .container{max-width:1100px;margin:24px auto;padding:0 18px}
+  .card{background:var(--card);border-radius:var(--radius);box-shadow:0 10px 28px rgba(10,30,60,.10);overflow:hidden}
+  .hero{background:var(--brand-blue);color:#fff;padding:22px 22px}
+  .hero h2{margin:0 0 6px;font-size:1.25rem}
+  .hero p{margin:0;opacity:.95}
+  .content{padding:22px}
+  h3{color:var(--brand-wine);margin:18px 0 8px}
+  .grid-2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+  .kvs{background:#f7f9fd;border:1px solid #e7efff;border-radius:12px;padding:10px 12px}
+  .actions{display:flex;flex-wrap:wrap;gap:10px;margin:14px 0 0}
+  .btn{display:inline-block;padding:10px 14px;border-radius:10px;font-weight:600;border:1px solid transparent;cursor:pointer}
+  .btn-primary{background:var(--brand-wine);color:#fff}
+  .btn-outline{background:#fff;border-color:var(--brand-blue);color:var(--brand-blue)}
+  .btn-ghost{background:#fff;border-color:#e5eaf5;color:#39445e}
+  table{width:100%;border-collapse:collapse;margin:8px 0 16px}
+  th,td{padding:10px;border:1px solid #e6ecf7;text-align:left;vertical-align:top}
+  th{background:#f1f6ff;color:var(--brand-blue);font-weight:700}
+  .notice{background:#fff7e6;border:1px solid #ffd699;border-radius:10px;padding:10px 12px}
+  .footer{text-align:center;color:var(--muted);padding: 4px 0 18px}
+  .siggrid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+  .sigbox{border:1px dashed #c9d3e8;border-radius:10px;padding:12px}
+  .sigline{border-top:1px solid #000;margin-top:30px;width:250px}
+  form.accept{display:grid;gap:12px;max-width:720px}
+  label{font-weight:600;color:#0d2a5a}
+  input,textarea{width:100%;padding:10px 12px;border:1px solid #dbe7fb;border-radius:10px}
+  .help{color:var(--muted);font-size:.95rem}
+  .section-title{font-size:1.05rem;font-weight:700;margin:20px 0 6px}
+  .print-tip{font-size:.95rem;color:#725400}
+  .mini{font-size:.95rem;color:var(--muted)}
+  .hr{height:1px;background:#e9eef9;margin:16px 0}
+  @media (max-width:760px){
+    .grid-2{grid-template-columns:1fr}
+    .siggrid{grid-template-columns:1fr}
+  }
+  /* Print: hide nav/buttons, flatten shadows */
+  @media print{
+    body{background:#fff}
+    .topbar,nav,.actions,.print-hide{display:none !important}
+    .card{box-shadow:none;border-radius:0}
+    a{color:#000;text-decoration:none}
+  }
 </style>
 </head>
 <body>
+
 <header class="topbar">
   <div class="navwrap">
     <div class="brand">
-<svg class="logo" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-  <defs>
-    <linearGradient id="g" x1="0" x2="1">
-      <stop offset="0%" stop-color="#7a1f2e"/>
-      <stop offset="100%" stop-color="#0b3d91"/>
-    </linearGradient>
-  </defs>
-  <rect rx="18" width="100" height="100" fill="url(#g)"/>
-  <path d="M28 26h22a6 6 0 0 1 6 6v6a6 6 0 0 1-6 6H36v20" fill="none" stroke="#fff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
+      <!-- Simple inline logo -->
+      <svg class="logo" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <defs>
+          <linearGradient id="g" x1="0" x2="1">
+            <stop offset="0%" stop-color="#7a1f2e"/>
+            <stop offset="100%" stop-color="#0b3d91"/>
+          </linearGradient>
+        </defs>
+        <rect rx="18" width="100" height="100" fill="url(#g)"/>
+        <path d="M28 26h22a6 6 0 0 1 6 6v6a6 6 0 0 1-6 6H36v20" fill="none" stroke="#fff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
       <div>
         <h1>Ehichassy Nigeria Enterprise</h1>
         <div style="opacity:.9">Supply · Install · Distribute</div>
       </div>
     </div>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="contract.html">Contract</a>
+    <nav class="print-hide">
+      <a href="#agreement">Home</a>
+      <a href="#agreement">Contract</a>
       <a href="mailto:charlesehigiator5@gmail.com">Contact</a>
-    <ul><li><a href="contract.html">Contract Agreement</a></li></ul>
-</nav>
+    </nav>
   </div>
 </header>
 
 <main class="container">
-  <div class="card">
+
+  <!-- AGREEMENT CARD -->
+  <section id="agreement" class="card">
     <div class="hero">
-      <h2>Company Portfolio</h2>
-      <p>Professional services in power infrastructure: supply, installation and distribution.</p>
+      <h2>Agreement for Supply, Installation of 500 KVA and Distribution of Electricity to 300 Households</h2>
+      <p>Ofeiani Quarters off Ihumudumu Girls School Road, Ihumudumu — Ekpoma, Edo State</p>
+    </div>
+
+    <div class="content">
+      <div class="grid-2">
+        <div class="kvs"><strong>Date:</strong> <span id="date-blank">______________________</span></div>
+        <div class="kvs"><strong>Sponsor:</strong> Ehichassy Nigeria Enterprise</div>
+        <div class="kvs"><strong>Client:</strong> Representatives of Ofeiani Quarters</div>
+        <div class="kvs mini">Tip: Use “Save as PDF” in the print dialog.</div>
+      </div>
+
+      <h3>1. Cost & Subsidy</h3>
+      <table>
+        <thead><tr><th>Item</th><th>Amount (₦)</th></tr></thead>
+        <tbody>
+          <tr><td>Actual Cost per House</td><td>1,076,250.00</td></tr>
+          <tr><td>Less 5% Subsidy</td><td>(53,812.50)</td></tr>
+          <tr><th>Subsidized Cost per House</th><th>1,022,437.50</th></tr>
+        </tbody>
+      </table>
+
+      <h3>2. Terms of Payment</h3>
+      <table>
+        <thead>
+          <tr><th>Payment Stage</th><th>%</th><th>Amount per House (₦)</th><th>Due Date</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Upfront Payment</td><td>80%</td><td>817,950.00</td><td>Before commencement of work</td></tr>
+          <tr><td>Balance Payment</td><td>20%</td><td>204,487.50</td><td>Upon completion & testing</td></tr>
+        </tbody>
+      </table>
+
+      <div class="section-title">Mode of Payment</div>
+      <div class="notice">
+        All payments under this agreement shall be made strictly through bank transfer or deposit into the designated account. No cash payments will be accepted.
+        <div class="hr"></div>
+        <strong>Account Name:</strong> Ehichassy Nigeria Enterprise<br/>
+        <strong>Account Number:</strong> 1016586515<br/>
+        <strong>Bank Name:</strong> Zenith Bank
+      </div>
+
+      <h3>4. Delivery & Timeline</h3>
+      <p>Work shall commence within 15 days of receiving the initial 80% payment. Completion period for each house shall be 3 months from commencement, subject to force majeure.</p>
+
+      <h3>5. Warranties & Guarantees</h3>
+      <p>All materials and equipment supplied are new, genuine, and meet Nigerian and international standards. Warranty period: __________ months/years on installation against defects.</p>
+
+      <h3>6. Breach of Agreement</h3>
+      <p>In the event that either party fails to fulfill any of the terms and conditions outlined in this agreement, such failure shall constitute a breach of contract.</p>
+      <ul>
+        <li><strong>For the Sponsor (Ehichassy Nigeria Enterprise):</strong> Failure to supply, install, or complete the agreed electricity installation in accordance with the timeline and specifications stated herein will be considered a breach, unless caused by force majeure or delays directly attributable to the Client.</li>
+        <li><strong>For the Client (Home Owner):</strong> Failure to make payment according to the agreed payment schedule, or any act that deliberately hinders the Sponsor’s ability to carry out the work, will constitute a breach.</li>
+      </ul>
+      <p>Upon breach, the non-breaching party shall issue a written notice allowing 14 calendar days for remedy. If not remedied, the non-breaching party may terminate this agreement and seek legal remedies, including damages and recovery of outstanding payments.</p>
+
+      <h3>7. Governing Law</h3>
+      <p>This Agreement shall be governed by the laws of the Federal Republic of Nigeria.</p>
+
+      <h3>8. Dispute Resolution</h3>
+      <p>Disputes shall be resolved amicably; failing which, they shall be referred to arbitration under the Arbitration and Conciliation Act, Cap A18 LFN.</p>
+
+      <h3>9. Entire Agreement</h3>
+      <p>This document represents the entire agreement between the parties and supersedes prior understandings relating to this subject.</p>
+
+      <h3>IN WITNESS WHEREOF</h3>
+      <p>The parties have hereunto set their hands and seals on the date first written above.</p>
+
+      <div class="siggrid">
+        <div class="sigbox">
+          <strong>For: Ehichassy Nigeria Enterprise (Sponsor)</strong>
+          <div class="sigline"></div>
+          Name:<br/>Signature:<br/>Date:
+        </div>
+        <div class="sigbox">
+          <strong>For: [Home Owner]</strong>
+          <div class="sigline"></div>
+          Name:<br/>Signature:<br/>Date:
+        </div>
+      </div>
+
+      <div class="siggrid" style="margin-top:12px">
+        <div class="sigbox">
+          <strong>Witness 1</strong>
+          <div class="sigline"></div>
+          Name:<br/>Signature:<br/>Address:<br/>Date:
+        </div>
+        <div class="sigbox">
+          <strong>Witness 2</strong>
+          <div class="sigline"></div>
+          Name:<br/>Signature:<br/>Address:<br/>Date:
+        </div>
+      </div>
+
+      <div class="actions print-hide">
+        <button class="btn btn-outline" onclick="printBlankAgreement()">Download Blank PDF</button>
+        <a class="btn btn-ghost" href="#acceptance" onclick="scrollToAccept()">Go to Acceptance</a>
+        <span class="print-tip">Tip: Use “Save as PDF” in the print dialog.</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ACCEPTANCE CARD -->
+  <section id="acceptance" class="card" style="margin-top:16px">
+    <div class="hero" style="background:var(--brand-wine)">
+      <h2>Acceptance of Agreement</h2>
+      <p>Complete this form to accept the agreement. A copy can be generated for you, and a record will be emailed to Ehichassy.</p>
     </div>
     <div class="content">
-      <div class="grid">
-        <div class="meta box">
-          <strong>Phone:</strong> +2348023238055, +2347063144919
+      <p class="help"><strong>Note:</strong> Email delivery uses Formspree. Replace the <code>YOUR_FORM_ID</code> in this HTML with your actual Formspree form ID before going live.</p>
+
+      <form class="accept" id="accept-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST" target="_blank" onsubmit="afterSubmitPrint()">
+        <div class="grid-2">
+          <div>
+            <label for="fullName">Full Name</label>
+            <input id="fullName" name="fullName" type="text" required />
+          </div>
+          <div>
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" required />
+          </div>
         </div>
-        <div class="meta box">
-          <strong>Email:</strong> charlesehigiator5@gmail.com
+
+        <div class="grid-2">
+          <div>
+            <label for="date">Date</label>
+            <input id="date" name="date" type="date" required />
+          </div>
+          <div>
+            <label for="signature">Signature (type your name)</label>
+            <input id="signature" name="signature" type="text" required />
+          </div>
         </div>
-        <div class="meta box">
-          <strong>Location:</strong> Ogun & Edo State Operations
+
+        <div>
+          <label for="comments">Comments (optional)</label>
+          <textarea id="comments" name="comments" rows="3" placeholder="Any note you want to include"></textarea>
         </div>
-      </div>
-      <h3>Featured Agreement</h3>
-      <p>View the full agreement for the <em>Supply & Installation of 500 KVA and Distribution to 300 Households in Ofeiani Quarters, Ihumudumu, Ekpoma, Edo State</em>.</p>
-      <p><a class="btn btn-primary" href="contract.html">Open Contract Page</a></p>
+
+        <div class="actions">
+          <button type="submit" class="btn btn-primary">Submit Acceptance &amp; Get PDF</button>
+          <button type="button" class="btn btn-outline" onclick="printFilledAcceptance()">Get PDF Only</button>
+          <button type="reset" class="btn btn-ghost">Reset</button>
+        </div>
+      </form>
+
+      <div class="hr"></div>
+      <div class="mini">© Ehichassy Nigeria Enterprise — Contact: +2348023238055 | +2347063144919 — <a href="mailto:charlesehigiator5@gmail.com">charlesehigiator5@gmail.com</a></div>
     </div>
-  </div>
-  <div class="footer">&copy; Ehichassy Nigeria Enterprise</div>
+  </section>
+
 </main>
+
+<footer class="footer print-hide">
+  &copy; <span id="year"></span> Ehichassy Nigeria Enterprise
+</footer>
+
+<script>
+  // Prefill today's date for acceptance
+  (function init(){
+    var d = document.getElementById('date');
+    if(d && !d.value){
+      const today = new Date();
+      const yyyy = today.getFullYear();
+      const mm = String(today.getMonth()+1).padStart(2,'0');
+      const dd = String(today.getDate()).padStart(2,'0');
+      d.value = `${yyyy}-${mm}-${dd}`;
+    }
+    var y = document.getElementById('year');
+    if(y){ y.textContent = new Date().getFullYear(); }
+  })();
+
+  // Scroll helper
+  function scrollToAccept(){
+    document.querySelector('#acceptance').scrollIntoView({behavior:'smooth', block:'start'});
+  }
+
+  // Print the agreement section only (blank)
+  function printBlankAgreement(){
+    printSection('#agreement');
+  }
+
+  // After submit, also prompt print of the filled acceptance copy
+  function afterSubmitPrint(){
+    // Let the form submit in a new tab, then print current page copy
+    setTimeout(function(){ printFilledAcceptance(); }, 500);
+  }
+
+  // Print acceptance section with filled data
+  function printFilledAcceptance(){
+    printSection('#acceptance');
+  }
+
+  // Generic print helper that temporarily hides other sections
+  function printSection(selector){
+    const target = document.querySelector(selector);
+    if(!target){ window.print(); return; }
+
+    const all = Array.from(document.querySelectorAll('section.card'));
+    // Remember original display
+    const prev = all.map(el => el.style.display);
+    all.forEach(el => { if(el !== target) el.style.display = 'none'; });
+
+    // Hide footer/nav while printing (already handled by @media print, but for safety)
+    const nav = document.querySelector('.topbar nav');
+    const footer = document.querySelector('footer.footer');
+    const navPrev = nav ? nav.style.display : '';
+    const footPrev = footer ? footer.style.display : '';
+    if(nav) nav.style.display = 'none';
+    if(footer) footer.style.display = 'none';
+
+    window.print();
+
+    // Restore
+    all.forEach((el,i) => el.style.display = prev[i]);
+    if(nav) nav.style.display = navPrev;
+    if(footer) footer.style.display = footPrev;
+  }
+</script>
 </body>
 </html>
-<!doctype html>
-<html lang="en">
-<head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Ehichassy Nigeria Enterprise</title>
-<style>
-:root {
-  --brand-blue: #0b3d91;
-  --brand-wine: #7a1f2e;
-  --radius: 14px;
-  --pad: 22px;
-  --muted:#6b6b6b;
-}
-* { box-sizing: border-box }
-html, body { margin:0; padding:0; font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, Arial; color:#10203b; background:#f3f6fb }
-a { color: var(--brand-blue); text-decoration: none }
-.topbar { background: linear-gradient(90deg, var(--brand-wine), var(--brand-blue)); color:#fff; padding: 16px 18px; }
-.navwrap { max-width: 1100px; margin: 0 auto; display:flex; align-items:center; gap:16px; justify-content:space-between }
-.brand { display:flex; align-items:center; gap:12px }
-.brand .logo { width:56px; height:56px }
-.brand h1 { font-size:1.15rem; margin:0 }
-nav a { color:#fff; opacity:0.95; margin-left:16px }
-nav a:hover { opacity:1 }
-.container { max-width: 1100px; margin: 26px auto; padding: 0 18px }
-.card { background:#fff; border-radius: var(--radius); overflow:hidden; box-shadow: 0 10px 28px rgba(10,30,60,.10) }
-.hero { background: var(--brand-blue); color:#fff; padding: 26px }
-.hero h2 { margin:0; font-size:1.25rem }
-.hero p { margin:8px 0 0; color: rgba(255,255,255,.9) }
-.content { padding: 22px }
-table { width:100%; border-collapse: collapse; margin-top:10px }
-th, td { border:1px solid #e5edf9; padding:10px; text-align:left }
-th { background:#f1f6ff; color: var(--brand-blue) }
-h3 { color: var(--brand-wine); margin-top:18px }
-.btn { display:inline-block; padding:10px 14px; border-radius:10px; font-weight:600 }
-.btn-primary { background: var(--brand-wine); color:#fff }
-.btn-outline { border:1px solid var(--brand-blue); color: var(--brand-blue); background:#fff }
-.footer { text-align:center; color:var(--muted); padding: 18px 0 26px }
-.grid { display:grid; grid-template-columns: repeat(auto-fit,minmax(260px,1fr)); gap:16px }
-.meta .box { background:#f7f9fc; border:1px solid #eef3fb; padding:12px; border-radius:10px }
-.form { display:grid; gap:12px; max-width:680px }
-input, textarea { padding:10px 12px; border-radius:10px; border:1px solid #dbe7fb; width:100% }
-label { font-weight:600; color:#0d2a5a }
-.notice { background:#fff7e6; border:1px solid #ffd699; padding:10px 12px; border-radius:10px }
-@media print {
-  body { background:#fff }
-  .topbar, .footer, .actions, nav { display:none }
-  .card { box-shadow:none; border-radius:0 }
-}
-</style>
-</head>
-<body>
-<header class="topbar">
-  <div class="navwrap">
-    <div class="brand">
-<svg class="logo" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-  <defs>
-    <linearGradient id="g" x1="0" x2="1">
-      <stop offset="0%" stop-color="#7a1f2e"/>
-      <stop offset="100%" stop-color="#0b3d91"/>
-    </linearGradient>
-  </defs>
-  <rect rx="18" width="100" height="100" fill="url(#g)"/>
-  <path d="M28 26h22a6 6 0 0 1 6 6v6a6 6 0 0 1-6 6H36v20" fill="none" stroke="#fff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
-      <div>
-        <h1>Ehichassy Nigeria Enterprise</h1>
-        <div style="opacity:.9">Supply · Install · Distribute</div>
-      </div>
-    </div>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="contract.html">Contract</a>
-      <a href="mailto:charlesehigiator5@gmail.com">Contact</a>
-    <ul><li><a href="contract.html">Contract Agreement</a></li></ul>
-</nav>
-  </div>
-</header>
-
-<main class="container">
-  <div class="card">
-    <div class="hero">
-      <h2>Company Portfolio</h2>
-      <p>Professional services in power infrastructure: supply, installation and distribution.</p>
-    </div>
-    <div class="content">
-      <div class="grid">
-        <div class="meta box">
-          <strong>Phone:</strong> +2348023238055, +2347063144919
-        </div>
-        <div class="meta box">
-          <strong>Email:</strong> charlesehigiator5@gmail.com
-        </div>
-        <div class="meta box">
-          <strong>Location:</strong> Ogun & Edo State Operations
-        </div>
-      </div>
-      <h3>Featured Agreement</h3>
-      <p>View the full agreement for the <em>Supply & Installation of 500 KVA and Distribution to 300 Households in Ofeiani Quarters, Ihumudumu, Ekpoma, Edo State</em>.</p>
-      <p><a class="btn btn-primary" href="contract.html">Open Contract Page</a></p>
-    </div>
-  </div>
-  <div class="footer">&copy; Ehichassy Nigeria Enterprise</div>
-</main>
-</body>
-</html>
-<!doctype html>
-<html lang="en">
-<head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Ehichassy Nigeria Enterprise</title>
-<style>
-:root {
-  --brand-blue: #0b3d91;
-  --brand-wine: #7a1f2e;
-  --radius: 14px;
-  --pad: 22px;
-  --muted:#6b6b6b;
-}
-* { box-sizing: border-box }
-html, body { margin:0; padding:0; font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, Arial; color:#10203b; background:#f3f6fb }
-a { color: var(--brand-blue); text-decoration: none }
-.topbar { background: linear-gradient(90deg, var(--brand-wine), var(--brand-blue)); color:#fff; padding: 16px 18px; }
-.navwrap { max-width: 1100px; margin: 0 auto; display:flex; align-items:center; gap:16px; justify-content:space-between }
-.brand { display:flex; align-items:center; gap:12px }
-.brand .logo { width:56px; height:56px }
-.brand h1 { font-size:1.15rem; margin:0 }
-nav a { color:#fff; opacity:0.95; margin-left:16px }
-nav a:hover { opacity:1 }
-.container { max-width: 1100px; margin: 26px auto; padding: 0 18px }
-.card { background:#fff; border-radius: var(--radius); overflow:hidden; box-shadow: 0 10px 28px rgba(10,30,60,.10) }
-.hero { background: var(--brand-blue); color:#fff; padding: 26px }
-.hero h2 { margin:0; font-size:1.25rem }
-.hero p { margin:8px 0 0; color: rgba(255,255,255,.9) }
-.content { padding: 22px }
-table { width:100%; border-collapse: collapse; margin-top:10px }
-th, td { border:1px solid #e5edf9; padding:10px; text-align:left }
-th { background:#f1f6ff; color: var(--brand-blue) }
-h3 { color: var(--brand-wine); margin-top:18px }
-.btn { display:inline-block; padding:10px 14px; border-radius:10px; font-weight:600 }
-.btn-primary { background: var(--brand-wine); color:#fff }
-.btn-outline { border:1px solid var(--brand-blue); color: var(--brand-blue); background:#fff }
-.footer { text-align:center; color:var(--muted); padding: 18px 0 26px }
-.grid { display:grid; grid-template-columns: repeat(auto-fit,minmax(260px,1fr)); gap:16px }
-.meta .box { background:#f7f9fc; border:1px solid #eef3fb; padding:12px; border-radius:10px }
-.form { display:grid; gap:12px; max-width:680px }
-input, textarea { padding:10px 12px; border-radius:10px; border:1px solid #dbe7fb; width:100% }
-label { font-weight:600; color:#0d2a5a }
-.notice { background:#fff7e6; border:1px solid #ffd699; padding:10px 12px; border-radius:10px }
-@media print {
-  body { background:#fff }
-  .topbar, .footer, .actions, nav { display:none }
-  .card { box-shadow:none; border-radius:0 }
-}
-</style>
-</head>
-<body>
-<header class="topbar">
-  <div class="navwrap">
-    <div class="brand">
-<svg class="logo" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-  <defs>
-    <linearGradient id="g" x1="0" x2="1">
-      <stop offset="0%" stop-color="#7a1f2e"/>
-      <stop offset="100%" stop-color="#0b3d91"/>
-    </linearGradient>
-  </defs>
-  <rect rx="18" width="100" height="100" fill="url(#g)"/>
-  <path d="M28 26h22a6 6 0 0 1 6 6v6a6 6 0 0 1-6 6H36v20" fill="none" stroke="#fff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
-      <div>
-        <h1>Ehichassy Nigeria Enterprise</h1>
-        <div style="opacity:.9">Supply · Install · Distribute</div>
-      </div>
-    </div>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="contract.html">Contract</a>
-      <a href="mailto:charlesehigiator5@gmail.com">Contact</a>
-    <ul><li><a href="contract.html">Contract Agreement</a></li></ul>
-</nav>
-  </div>
-</header>
-
-<main class="container">
-  <div class="card">
-    <div class="hero">
-      <h2>Company Portfolio</h2>
-      <p>Professional services in power infrastructure: supply, installation and distribution.</p>
-    </div>
-    <div class="content">
-      <div class="grid">
-        <div class="meta box">
-          <strong>Phone:</strong> +2348023238055, +2347063144919
-        </div>
-        <div class="meta box">
-          <strong>Email:</strong> charlesehigiator5@gmail.com
-        </div>
-        <div class="meta box">
-          <strong>Location:</strong> Ogun & Edo State Operations
-        </div>
-      </div>
-      <h3>Featured Agreement</h3>
-      <p>View the full agreement for the <em>Supply & Installation of 500 KVA and Distribution to 300 Households in Ofeiani Quarters, Ihumudumu, Ekpoma, Edo State</em>.</p>
-      <p><a class="btn btn-primary" href="contract.html">Open Contract Page</a></p>
-    </div>
-  </div>
-  <div class="footer">&copy; Ehichassy Nigeria Enterprise</div>
-</main>
-</body>
-</html>
-
