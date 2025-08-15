@@ -1,105 +1,42 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Ehichassy Nigeria Enterprise</title>
 <style>
-:root {
-  --brand-blue: #0b3d91;
-  --brand-wine: #7a1f2e;
-  --radius: 14px;
-  --pad: 22px;
-  --muted:#6b6b6b;
-}
-* { box-sizing: border-box }
-html, body { margin:0; padding:0; font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, Arial; color:#10203b; background:#f3f6fb }
-a { color: var(--brand-blue); text-decoration: none }
-.topbar { background: linear-gradient(90deg, var(--brand-wine), var(--brand-blue)); color:#fff; padding: 16px 18px; }
-.navwrap { max-width: 1100px; margin: 0 auto; display:flex; align-items:center; gap:16px; justify-content:space-between }
-.brand { display:flex; align-items:center; gap:12px }
-.brand .logo { width:56px; height:56px }
-.brand h1 { font-size:1.15rem; margin:0 }
-nav a { color:#fff; opacity:0.95; margin-left:16px }
-nav a:hover { opacity:1 }
-.container { max-width: 1100px; margin: 26px auto; padding: 0 18px }
-.card { background:#fff; border-radius: var(--radius); overflow:hidden; box-shadow: 0 10px 28px rgba(10,30,60,.10) }
-.hero { background: var(--brand-blue); color:#fff; padding: 26px }
-.hero h2 { margin:0; font-size:1.25rem }
-.hero p { margin:8px 0 0; color: rgba(255,255,255,.9) }
-.content { padding: 22px }
-table { width:100%; border-collapse: collapse; margin-top:10px }
-th, td { border:1px solid #e5edf9; padding:10px; text-align:left }
-th { background:#f1f6ff; color: var(--brand-blue) }
-h3 { color: var(--brand-wine); margin-top:18px }
-.btn { display:inline-block; padding:10px 14px; border-radius:10px; font-weight:600 }
-.btn-primary { background: var(--brand-wine); color:#fff }
-.btn-outline { border:1px solid var(--brand-blue); color: var(--brand-blue); background:#fff }
-.footer { text-align:center; color:var(--muted); padding: 18px 0 26px }
-.grid { display:grid; grid-template-columns: repeat(auto-fit,minmax(260px,1fr)); gap:16px }
-.meta .box { background:#f7f9fc; border:1px solid #eef3fb; padding:12px; border-radius:10px }
-.form { display:grid; gap:12px; max-width:680px }
-input, textarea { padding:10px 12px; border-radius:10px; border:1px solid #dbe7fb; width:100% }
-label { font-weight:600; color:#0d2a5a }
-.notice { background:#fff7e6; border:1px solid #ffd699; padding:10px 12px; border-radius:10px }
-@media print {
-  body { background:#fff }
-  .topbar, .footer, .actions, nav { display:none }
-  .card { box-shadow:none; border-radius:0 }
-}
+  body{margin:0;font-family:Arial,Helvetica,sans-serif;background:#f4f6f9;color:#333}
+  header{background:#0b3d91;color:#fff;padding:1rem;text-align:center}
+  header h1{margin:0;font-size:1.5rem}
+  main{max-width:800px;margin:auto;padding:2rem;background:#fff;box-shadow:0 4px 12px rgba(0,0,0,0.1);border-radius:8px;margin-top:2rem}
+  p{line-height:1.6}
+  a.btn{display:inline-block;padding:0.75rem 1.2rem;background:#7a1f2e;color:#fff;text-decoration:none;border-radius:5px;margin-top:1rem}
+  a.btn:hover{background:#992f40}
+  footer{text-align:center;font-size:.9rem;color:#777;margin-top:2rem;padding:1rem}
 </style>
 </head>
 <body>
-<header class="topbar">
-  <div class="navwrap">
-    <div class="brand">
-<svg class="logo" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-  <defs>
-    <linearGradient id="g" x1="0" x2="1">
-      <stop offset="0%" stop-color="#7a1f2e"/>
-      <stop offset="100%" stop-color="#0b3d91"/>
-    </linearGradient>
-  </defs>
-  <rect rx="18" width="100" height="100" fill="url(#g)"/>
-  <path d="M28 26h22a6 6 0 0 1 6 6v6a6 6 0 0 1-6 6H36v20" fill="none" stroke="#fff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
-      <div>
-        <h1>Ehichassy Nigeria Enterprise</h1>
-        <div style="opacity:.9">Supply · Install · Distribute</div>
-      </div>
-    </div>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="contract.html">Contract</a>
-      <a href="mailto:charlesehigiator5@gmail.com">Contact</a>
-    <ul><li><a href="contract.html">Contract Agreement</a></li></ul>
-</nav>
-  </div>
+
+<header>
+  <h1>Ehichassy Nigeria Enterprise</h1>
+  <div>Supply · Install · Distribute</div>
 </header>
 
-<main class="container">
-  <div class="card">
-    <div class="hero">
-      <h2>Company Portfolio</h2>
-      <p>Professional services in power infrastructure: supply, installation and distribution.</p>
-    </div>
-    <div class="content">
-      <div class="grid">
-        <div class="meta box">
-          <strong>Phone:</strong> +2348023238055, +2347063144919
-        </div>
-        <div class="meta box">
-          <strong>Email:</strong> charlesehigiator5@gmail.com
-        </div>
-        <div class="meta box">
-          <strong>Location:</strong> Ogun & Edo State Operations
-        </div>
-      </div>
-      <h3>Featured Agreement</h3>
-      <p>View the full agreement for the <em>Supply & Installation of 500 KVA and Distribution to 300 Households in Ofeiani Quarters, Ihumudumu, Ekpoma, Edo State</em>.</p>
-      <p><a class="btn btn-primary" href="contract.html">Open Contract Page</a></p>
-    </div>
-  </div>
-  <div class="footer">&copy; Ehichassy Nigeria Enterprise</div>
+<main>
+  <p>Welcome to <strong>Ehichassy Nigeria Enterprise</strong>, a trusted provider of electricity supply, installation, and distribution services in Nigeria. Our mission is to deliver reliable, high-quality electrical solutions to communities while keeping costs affordable through subsidies and flexible payment terms.</p>
+
+  <p>Our current project: Supply, installation, and distribution of 500 KVA power to 300 households at Ofeiani Quarters, Ihumudumu — Ekpoma, Edo State.</p>
+
+  <a href="contract.html" class="btn">View Agreement</a>
 </main>
+
+<footer>
+  &copy; <span id="year"></span> Ehichassy Nigeria Enterprise
+</footer>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
 </body>
 </html>
